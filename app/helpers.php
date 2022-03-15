@@ -20,12 +20,25 @@ if (!function_exists('dd')) {
 }
 
 if (! function_exists('view')){
-    function view($file , ...$args){
-        View::render($file , ...$args);
+
+	/**
+	 * @param $file
+	 * @param ...$args
+	 *
+	 * @return mixed|void
+	 */
+	function view($file , ...$args){
+       return View::render($file , ...$args);
     }
 }
 if (! function_exists('image')){
-    function image($fileName , $defaultDir = 'images'){
+	/**
+	 * @param $fileName
+	 * @param $defaultDir
+	 *
+	 * @return void
+	 */
+	function image($fileName , $defaultDir = 'images'){
         \app\classes\Asset::image($fileName , $defaultDir);
     }
 }

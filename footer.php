@@ -304,5 +304,7 @@
 <!--  = Custom JS =  -->
 <script src="<?php \app\classes\Asset::js('custom'); ?>"></script>
 
+
+<?php wp_footer(); ?>
 </body>
 </html>
