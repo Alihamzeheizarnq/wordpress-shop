@@ -27,8 +27,8 @@ if (! function_exists('view')){
 	 *
 	 * @return mixed|void
 	 */
-	function view($file , ...$args){
-       return View::render($file , ...$args);
+	function view($file , $args = null){
+       return View::render($file , $args);
     }
 }
 if (! function_exists('image')){
